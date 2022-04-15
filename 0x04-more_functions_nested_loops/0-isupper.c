@@ -8,15 +8,10 @@
 
 int _isupper(int c)
 {
-	char a;
-
-	for (a = 65; a < 91; a++)
+	if (c >= 65 && c <= 90)
 	{
-		if (a == c)
-		{
-			return (1);
-		}
-		return (0);
+		return (1);
 	}
+	return (0);
 }
 
