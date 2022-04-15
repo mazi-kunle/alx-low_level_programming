@@ -18,6 +18,7 @@ void more_numbers(void)
 		{
 			_putchar(a + '0');
 		}
+		_putchar('\n');
 		count = count + 1;
 	}
 	_putchar('\n');
