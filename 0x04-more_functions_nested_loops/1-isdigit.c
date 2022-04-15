@@ -8,15 +8,10 @@
 
 int _isdigit(int c)
 {
-	char a;
-
-	for (a = 48; a < 58; a++)
+	if (c >= 48 && c <= 57)
 	{
-		if (a == c)
-		{
-			return (1);
-		}
-		return (0);
+		return (1);
 	}
+	return (0);
 }
 
