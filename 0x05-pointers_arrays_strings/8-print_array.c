@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 	int *b = a;
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n - 1; i++)
 	{
 		b++;
 	}
@@ -20,6 +20,7 @@ void print_array(int *a, int n)
 	{
 		_putchar(*a);
 		_putchar(',');
+		_putchar(' ');
 		a++;
 	}
 	_putchar(*b);
