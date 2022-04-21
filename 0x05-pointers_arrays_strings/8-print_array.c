@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - printf n elements of array.
  * @a : parmeter.
@@ -18,11 +19,11 @@ void print_array(int *a, int n)
 
 	while (*a != *b)
 	{
-		_putchar(*a);
-		_putchar(',');
-		_putchar(' ');
+		printf(*a);
+		printf(",");
+		printf(" ");
 		a++;
 	}
-	_putchar(*b);
-	_putchar('\n');
+	printf("%d", *b);
+	printf("\n");
 }
