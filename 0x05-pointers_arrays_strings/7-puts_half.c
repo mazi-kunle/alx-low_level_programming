@@ -10,7 +10,9 @@ void puts_half(char *str)
 	int n;
 	int length;
 	int i;
+	char *a;
 
+	a = str;
 	length = 0;
 	while (*str != '\0')
 	{
@@ -28,12 +30,12 @@ void puts_half(char *str)
 
 	for (i = 0; i < n + 1; i++)
 	{
-		str++;
+		a++;
 	}
-	while (*str != '\0')
+	while (*a != '\0')
 	{
-		_putchar(*str);
-		str++;
+		_putchar(*a);
+		a++;
 	}
 	_putchar('\n');
 }
