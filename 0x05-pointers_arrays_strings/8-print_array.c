@@ -19,7 +19,7 @@ void print_array(int *a, int n)
 
 	while (*a != *b)
 	{
-		printf(*a);
+		printf("%d", *a);
 		printf(",");
 		printf(" ");
 		a++;
