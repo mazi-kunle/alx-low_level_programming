@@ -10,9 +10,15 @@ void print_rev(char *s)
 	int length, c;
 	char *begin, *end, temp;
 
-	length = _strlen(s);
+	length = 0;
 	begin = s;
 	end = s;
+
+	while (*s != '\0')
+	{
+		length = length + 1;
+		s++;
+	}
 
 	for (c = 0; c < (length - 1); c++)
 		end++;
