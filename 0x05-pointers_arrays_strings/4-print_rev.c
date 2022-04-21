@@ -28,9 +28,13 @@ void print_rev(char *s)
 		*end = *begin;
 		*begin = temp;
 
-		_putchar(*begin);
 		begin++;
 		end--;
+	}
+	while (*s != '\0')
+	{
+		_putchar(*s);
+		s++;
 	}
 	_putchar('\n');
 }
