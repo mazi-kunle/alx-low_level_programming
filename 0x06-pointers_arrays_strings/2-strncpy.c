@@ -12,10 +12,6 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *p;
 
-	if ((dest == NULL) && (src == NULL))
-	{
-		return (NULL);
-	}
 	p = dest;
 	while (*src != '\0' && n--)
 	{
