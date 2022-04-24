@@ -11,18 +11,19 @@ char *leet(char *str)
 	char *end;
 	char sym[10] = "aeotlAEOTL";
 	char num[10] = "4307143071";
+	int i;
 
 	end = str;
-	while (*str != '\0')
+	while (*end != '\0')
 	{
-		for (int i = 0; i < 10; i++)
+		for (i = 0; i < 10; i++)
 		{
-			if (*str == sym[i])
+			if (*end == sym[i])
 			{
-				*str = num[i];
+				*end = num[i];
 			}
-			str++;
 		}
+		end++;
 	}
-	return (end);
+	return (str);
 }
