@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strchr- fill memory with a constant byte.
  * @s: parameter.
