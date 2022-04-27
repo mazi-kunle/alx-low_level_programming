@@ -1,20 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_chessboard- print the chessboard.
  * @a: parameter.
- * 
  * Return: void.
 */
 
 void print_chessboard(char (*a)[8])
 {
-	int length, count;
-  
-  length = sizeof(a);
-  count = 0;
-	for (int i = 0; i < 8; i++)
+	int length, count, i, j;
+
+	count = 0;
+	length = sizeof(a);
+	for (i = 0; i < 8; i++)
 	{
-		for (int j = 0; j < length; j++)
+		for (j = 0; j < length; j++)
 		{
 			_putchar(a[i][j]);
 		}
@@ -22,6 +22,6 @@ void print_chessboard(char (*a)[8])
 		if (count < length)
 		{
 			_putchar('\n');
-		}	
+		}
 	}
 }
