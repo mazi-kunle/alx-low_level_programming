@@ -19,7 +19,7 @@ void print_chessboard(char (*a)[8])
 			_putchar(a[i][j]);
 		}
 		count++;
-		if (count < length)
+		if (count <= length)
 		{
 			_putchar('\n');
 		}
