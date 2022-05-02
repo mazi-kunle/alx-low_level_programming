@@ -7,7 +7,7 @@
 int _atoi(char *s)
 {
 	char *t;
-	
+
 	t = s;
 	if (*s == *t)
 	{
