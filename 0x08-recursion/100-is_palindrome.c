@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * is_palindrome- check if a string is a palindrome.
- * check- helper.
  * @str: parameter.
  * @s: start.
  * @e: end.
