@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * main- print a number.
  *
@@ -9,9 +10,12 @@
  * Return: int.
 */
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	if (argv[argc] == NULL)
+	{
+		printf("%d\n", argc - 1);
+	}
 	return (0);
 }
 
