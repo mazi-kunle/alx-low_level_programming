@@ -38,5 +38,5 @@ char *_strdup(char *str)
 	}
 	temp[i] = '\0';
 
-	return (NULL);
+	return (temp);
 }
