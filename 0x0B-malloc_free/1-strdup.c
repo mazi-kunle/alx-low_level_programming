@@ -12,7 +12,7 @@
 char *_strdup(char *str)
 {
 	char *s;
-	char *temp;
+	char *temp, *temp2;
 	int i, length;
 
 	s = str;
@@ -38,5 +38,5 @@ char *_strdup(char *str)
 	}
 	temp[i] = '\0';
 
-	return (temp);
+	return (temp2);
 }
