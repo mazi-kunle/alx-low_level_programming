@@ -14,7 +14,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *temp;
-	int i;
+	unsigned int i;
 
 	if (size == 0)
 	{
