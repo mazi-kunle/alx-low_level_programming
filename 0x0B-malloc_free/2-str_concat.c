@@ -16,6 +16,11 @@ char *str_concat(char *s1, char *s2)
 	char *temp, *temp2;
 	int length;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		s1 = "";
+		s2 = "";
+	}
 	if (s1 == NULL)
 	{
 		s1 = "";
