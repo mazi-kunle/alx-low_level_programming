@@ -17,7 +17,9 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	char *s1, *s2, *temp;
+	char *s1;
+	char *s2;
+	char *temp;
 	int length, i, j;
 
 	length = 0;
