@@ -22,7 +22,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		temp = malloc(new_size);
 		strncpy(temp, ptr, new_size);
-		temp[new_size - 1] = '\0';
 		free(ptr);
 	} else if (new_size > old_size)
 	{
