@@ -8,17 +8,9 @@
 
 int main(void)
 {
-	char s[];
-	char *ptr;
+	char *s;
 
 	s = __FILE__;
-	ptr = s;
-	ptr = ptr + strlen(s);
-
-	while (*ptr != '\\')
-	{
-		ptr--;
-	}
-	printf("%s\n", (ptr + 1));
+	printf("%s\n", s);
 	return (0);
 }
