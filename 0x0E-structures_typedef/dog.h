@@ -18,6 +18,13 @@ struct dog
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
+/**
+ * struct old- a structure for dog.
+ * @name: first member.
+ * @age: second member.
+ * @owner: third owner.
+ *
+*/
 typedef struct old
 {
 	char *name;
