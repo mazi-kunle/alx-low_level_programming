@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list arglist;
 	unsigned int i;
 	char *s;
-	int count;
+	unsigned int count;
 
 	va_start(arglist, n);
 	count = 1;
@@ -31,5 +31,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			count++;
 		}
 	}
+	printf("\n");
 	va_end(arglist);
 }
