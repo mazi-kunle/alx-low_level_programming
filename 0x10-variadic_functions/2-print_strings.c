@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 /**
  * print_strings- a function that prints strings,
@@ -36,7 +37,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%s\n", va_arg(arglist, char *);
+			printf("%s\n", va_arg(arglist, char *));
 		}
 	}
 }
