@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", current->len, current->str);
 		}
 		count++;
-		curent = current-next;
+		curent = current->next;
 	}
 	return (count);
 }
