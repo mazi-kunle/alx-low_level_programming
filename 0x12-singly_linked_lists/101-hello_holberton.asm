@@ -1,15 +1,19 @@
-section .data
-	msg db "Hello, Holberton",10;
-section .text
-	global_start
+.LC0:
 
-_start:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, 13
-	syscall
+        .ascii "Hello, Holberton\0"
 
-	mov rax, 60
-	mov rdi, 0
-	syscall
+main:
+
+        push    rbp
+
+        mov     rbp, rsp
+
+        mov     edi, OFFSET FLAT:.LC0
+
+        call    puts
+
+        mov     eax, 0
+
+        pop     rbp
+
+        ret
