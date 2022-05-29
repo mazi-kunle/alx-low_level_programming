@@ -14,6 +14,7 @@ size_t listint_len(const listint_t *h)
 	const listint_t *tracker;
 
 	count = 0;
+	tracker = h;
 	while (tracker != NULL)
 	{
 		count++;
