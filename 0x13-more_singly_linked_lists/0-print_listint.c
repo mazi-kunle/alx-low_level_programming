@@ -22,6 +22,6 @@ size_t print_listint(const listint_t *h)
 		printf("%d\n", tracker->n);
 		tracker = tracker->next;
 	}
-	printf("-> %d elements", count);
+	printf("-> %lu elements", count);
 	return (count);
 }
