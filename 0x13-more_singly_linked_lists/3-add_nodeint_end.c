@@ -11,9 +11,9 @@
  * Return: linked list.
 */
 
-listint_t *add_nodeint_end(listint_t **head, const int n);
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	list_t *end_node, *tracker;
+	listint_t *end_node, *tracker;
 
 	tracker = *head;
 	end_node = malloc(sizeof(listint_t));
