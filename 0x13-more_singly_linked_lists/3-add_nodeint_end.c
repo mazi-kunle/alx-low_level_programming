@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * add_node_end- a function that adds a new node at the end
+ * add_nodeint_end- a function that adds a new node at the end
  * of a list_t list.
  * @head: parameter.
  * @n: parameter.
