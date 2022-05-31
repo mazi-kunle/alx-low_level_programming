@@ -36,13 +36,13 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int bin;
 	const char *temp;
 
-	length = strlen(b);
-	bin = 0;
-	temp = b;
 	if (b == NULL)
 	{
 		return (0);
 	}
+	length = strlen(b);
+	bin = 0;
+	temp = b;
 	while (*temp != '\0')
 	{
 		if (*temp == '0' || *temp == '1')
