@@ -14,5 +14,5 @@ void print_binary(unsigned long int n)
 	{
 		print_binary(n >> 1);
 	}
-	printf("%ld", n - (n >> 1) * 2);
+	printf("%lu", n - (n >> 1) * 2);
 }
