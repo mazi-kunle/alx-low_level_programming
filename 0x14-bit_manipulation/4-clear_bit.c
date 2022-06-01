@@ -16,7 +16,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	temp = n;
 	if (index < 31)
 	{
-		*temp = (1 << index) & *temp;
+		*temp = ~(1 << index) & *temp;
 		return (1);
 	}
 	return (-1);
