@@ -10,10 +10,9 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int i;
-
-	for (i = 1 << 31; i > 0; i = i >> 1)
+	if (n > 1)
 	{
-		(n & i) ? printf("1") : printf("0");
+		print_binary(n >> 1);
 	}
+	printf("%ld", n - (n >> 1) * 2);
 }
