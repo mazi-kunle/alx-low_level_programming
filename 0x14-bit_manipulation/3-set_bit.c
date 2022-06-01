@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned long int *temp;
 
 	temp = n;
-	temp = (1 << index) | *temp;
+	*temp = (1 << index) | *temp;
 	if (index < 31)
 	{
 		return (1);
