@@ -14,7 +14,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	int bitstatus;
 
 	bitstatus = (n >> index) & 1;
-	if (bitstatus == 0 || bitstatus == 1)
+	if (index < 31)
 	{
 		return (bitstatus);
 	}
