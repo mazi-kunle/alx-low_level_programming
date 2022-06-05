@@ -67,4 +67,5 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 	free(buf);
+	return (0);
 }
