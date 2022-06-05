@@ -12,7 +12,7 @@
  * Return: int.
 */
 
-void main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	char *buf;
 	ssize_t rcheck, wcheck;
