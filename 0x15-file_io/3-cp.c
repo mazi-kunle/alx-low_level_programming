@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 	}
 	if (fdfrom == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	buf = malloc(1025);
