@@ -8,7 +8,7 @@
 
 void print_triangle(int size)
 {
-	int i;
+	int i, j, k;
 
 	if (size <= 0)
 	{
@@ -16,9 +16,9 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (i = 1; i <= rows; i++)
+		for (i = 1; i <= size; i++)
 		{
-			for (j = i; j < rows; j++)
+			for (j = i; j < size; j++)
 			{
 				_putchar(' ');
 			}
