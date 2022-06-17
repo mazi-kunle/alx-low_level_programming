@@ -23,7 +23,7 @@ void print_square(int size)
 				_putchar('#');
 			}
 			count = count + 1;
-			if (count <= size)
+			if (count >= size)
 			{
 				_putchar('\n');
 			}
