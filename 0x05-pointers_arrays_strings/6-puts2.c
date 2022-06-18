@@ -9,22 +9,20 @@
 void puts2(char *str)
 {
 	int length, i;
+	char *ptr;
 
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str = str + 2;
-	}
-
+	ptr = str;
 	length = 0;
-	while (*str != '\0')
+	i = 0;
+	while (*ptr != '\0')
 	{
+		ptr++;
 		length++;
-		str++;
 	}
-	for (i = length; i > 0; i--)
+	while (i <= length)
 	{
-		str--;
+		_putchar(str[i]);
+		i = i + 2;
 	}
 	_putchar('\n');
 }
