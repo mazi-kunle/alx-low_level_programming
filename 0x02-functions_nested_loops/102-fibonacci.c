@@ -6,24 +6,25 @@
 */
 int main(void)
 {
-	unsigned long long int a = 1;
-	unsigned long long int b = 2;
-	unsigned long long int c;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int c;
 	int count = 2;
 
-	printf("%llu", a);
-	printf(",");
-	printf("%llu", b);
+	printf("%lu", a);
+	printf(", ");
+	printf("%lu", b);
 
 	while (count < 50)
 	{
 		c = a + b;
-		printf(",");
-		printf("%llu", c);
+		printf(", ");
+		printf("%lu", c);
 		a = b;
 		b = c;
 
 		count = count + 1;
 	}
+	printf("\n");
 	return (0);
 }
