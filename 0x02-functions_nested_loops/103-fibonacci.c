@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-	unsigned long int a = 1;
-	unsigned long int b = 2;
-	unsigned long int c = 2;
+	unsigned long int a = 0;
+	unsigned long int b = 1;
+	unsigned long int c;
 	unsigned long int sum = 0;
 
 	while (1)
