@@ -6,10 +6,10 @@
 */
 int main(void)
 {
-	unsigned long long int a = 1;
-	unsigned long long int b = 2;
-	unsigned long long int c = 2;
-	unsigned long long int sum = 0;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int c = 2;
+	unsigned long int sum = 0;
 
 	while (1)
 	{
@@ -25,6 +25,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
-	printf("%llu", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
