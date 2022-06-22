@@ -1,5 +1,27 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
+/**
+ * compare- function to compare two strings.
+ * @X: parameter.
+ * @Y: parameter.
+ *
+ * Return: int.
+*/
+int compare(const char *X, const char *Y)
+{
+	while (*X && *Y)
+	{
+		if (*X != *Y)
+		{
+			return (0);
+		}
+		X++;
+		Y++;
+	}
+	return (*Y == '\0');
+}
+
 /**
  * _strstr- fill memory with a constant byte.
  * @haystack: parameter.
@@ -8,35 +30,17 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	char *temp, *end;
-	int count, length, i, j;
-
-	temp = haystack;
-	end = needle;
-	count = 0;
-	length = 0;
-	while (*end != '\0')
+	if (strlen(needle) == 0)
 	{
-		length++;
-		end++;
+		return (haystack);
 	}
-	for (i = 0; haystack[i] != '\0'; i++)
+	while (*haystack != '\0')
 	{
-		if (haystack[i] == *needle)
+		if ((*haystack == *needle) && compare(haystack, needle))
 		{
-			temp = temp + i;
+			return (haystack);
 		}
-	}
-	for (j = 0; needle[j] != '\0'; j++)
-	{
-		if (needle[j] == temp[j])
-		{
-			count++;
-		}
-	}
-	if (count == length)
-	{
-		return (needle);
+		haystack++;
 	}
 	return (NULL);
 }
