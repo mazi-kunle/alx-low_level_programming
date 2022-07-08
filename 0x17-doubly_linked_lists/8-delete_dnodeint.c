@@ -37,7 +37,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	count = 0;
 	ptr = *head;
-	length = get_len(h);
+	length = get_len(head);
 	if (index == 0 && ptr != NULL)
 	{
 		ptr->next->prev = NULL;
