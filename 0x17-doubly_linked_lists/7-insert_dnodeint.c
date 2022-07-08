@@ -1,6 +1,27 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
+ * get_len- get the no of nodes in a doubly linked list.
+ * @h: head of the linked list.
+ *
+ * Return: no of nodes.
+*/
+unsigned int get_len(dlistint_t **h)
+{
+	dlistint_t *ptr;
+	unsigned int length;
+
+	length = 0;
+	ptr = *h;
+	while (ptr != NULL)
+	{
+		length++;
+		ptr = ptr->next;
+	}
+	return (length);
+}
+
+/**
  * insert_dnodeint_at_index- A function that inserts a new node at a
  * given position.
  * @h: head of the linked list.
@@ -15,34 +36,24 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int count, length;
 
 	count = 0;
-	length = 0;
 	ptr = *h;
-	ptr2 = *h;
 	if (*h == NULL || idx == 0)
 	{
 		new = add_dnodeint(h, n);
 		return (new);
 	}
-	
-	while (ptr2 != NULL)
-	{
-		length++;
-		ptr2 = ptr2->next;
-	}
-
-	if (length == (idx - 1))
+	length = get_len(h);
+	if (length == idx)
 	{
 		new = add_dnodeint_end(h, n);
 		return (new);
 	}
 	new = malloc(sizeof(dlistint_t));
-	
 	if (new == NULL)
 	{
 		return (NULL);
 	}
 	new->n = n;
-	
 	while (ptr != NULL)
 	{
 		if (count == (idx - 1))
