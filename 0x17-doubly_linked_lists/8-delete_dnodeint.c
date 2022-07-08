@@ -24,7 +24,7 @@ unsigned int get_len(dlistint_t **h)
 
 /**
  * delete_dnodeint_at_index- A function that deletes the node at
- * index index of a dlistint_t linked list.remove this.
+ * index index of a dlistint_t linked list.
  * @head: head of linked list.
  * @index: index.
  *
