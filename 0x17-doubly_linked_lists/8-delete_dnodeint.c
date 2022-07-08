@@ -1,5 +1,27 @@
 #include "lists.h"
 #include <stdlib.h>
+
+/**
+ * get_len- get the no of nodes in a doubly linked list.
+ * @h: head of the linked list.
+ *
+ * Return: no of nodes.
+*/
+unsigned int get_len(dlistint_t **h)
+{
+	dlistint_t *ptr;
+	unsigned int length;
+
+	length = 0;
+	ptr = *h;
+	while (ptr != NULL)
+	{
+		length++;
+		ptr = ptr->next;
+	}
+	return (length);
+}
+
 /**
  * delete_dnodeint_at_index- A function that deletes the node at
  * index index of a dlistint_t linked list.
