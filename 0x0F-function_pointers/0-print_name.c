@@ -6,7 +6,7 @@
  *
 */
 
-void print_name(char *name, void (*f)(char *))
+oid print_name(char *name, void (*f)(char *))
 {
 	f(name);
 }

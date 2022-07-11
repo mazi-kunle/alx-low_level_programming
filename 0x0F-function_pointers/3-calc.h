@@ -1,6 +1,6 @@
 #ifndef SECOND_H_
 #define SECOND_H_
-
+#include <stddef.h>
 /**
  * struct op - Struct op.
  *

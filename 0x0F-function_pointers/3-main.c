@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int a, b, ans;
+	int a, b;
 	int (*ptr)(int, int);
 
 	if (argc != 4)
@@ -26,13 +26,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	ans = ptr(a, b);
-	if (ans != 100)
-	{
-		printf("%d\n", ans);
-	} else
-	{
-		ptr(a, b);
-	}
+	printf("%d\n", ptr(a, b));
 	return (0);
 }
