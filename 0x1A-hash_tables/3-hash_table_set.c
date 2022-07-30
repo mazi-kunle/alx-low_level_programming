@@ -46,7 +46,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/*handle collison*/
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
-	printf("%s: %s\n", new_node->value, new_node->next->value);
 	return (1);
 }
 
