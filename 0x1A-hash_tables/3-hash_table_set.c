@@ -29,7 +29,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (node == NULL)
 	{
 		ht->array[index] = new_node;
-		printf("%s : %s\n", new_node->key, new_node->value);
 		return (1);
 	}
 	/*if key exists, replace it*/
