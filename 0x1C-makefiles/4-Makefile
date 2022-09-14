@@ -13,7 +13,7 @@ clean:
 	-$(RM) -rf *~ $(NAME)
 
 oclean:
-	-$(RM) -rf main.o school.o
+	-$(RM) -rf $(OBJ)
 
 fclean: clean oclean
 
