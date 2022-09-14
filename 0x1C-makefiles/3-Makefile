@@ -9,12 +9,10 @@ all: $(OBJ)
 
 .PHONY: clean oclean fclean re
 clean:
-	-$(RM) -f $(NAME) *.c~ *.tmp
+	-$(RM) -f *~ $(NAME)
 
 oclean:
-	-$(RM) -f *.o
+	-$(RM) -f main.o school.o
 
-fclean:
-	-$(RM) -f $(NAME) *.c~ *.tmp *.o
-re:
-	$(CC) -f $(SRC) -o $(NAME)
+fclean: clean oclean
+re: oclean all
